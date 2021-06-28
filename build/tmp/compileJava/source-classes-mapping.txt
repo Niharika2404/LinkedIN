@@ -1,0 +1,10 @@
+com/bridgelabz/selenium/pages/Home.java
+ com.bridgelabz.selenium.pages.Home
+com/bridgelabz/selenium/pages/Registration.java
+ com.bridgelabz.selenium.pages.Registration
+com/bridgelabz/selenium/base/Base.java
+ com.bridgelabz.selenium.base.Base
+com/bridgelabz/selenium/pages/Login.java
+ com.bridgelabz.selenium.pages.Login
+com/bridgelabz/selenium/pages/SearchBar.java
+ com.bridgelabz.selenium.pages.SearchBar
