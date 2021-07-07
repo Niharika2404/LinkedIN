@@ -1,4 +1,4 @@
-package com.bridgelabz.selenium.pages;
+package com.bridgelabz.selenium.dashboard;
 
 import com.bridgelabz.selenium.base.Base;
 import org.openqa.selenium.Keys;
@@ -8,15 +8,12 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-
-import static java.lang.Thread.sleep;
-
 public class SearchBar extends Base {
 
-    @FindBy(xpath = "//input[@role='combobox']")
+    @FindBy(xpath = "//*[@id=\"ember19\"]/input")
     WebElement search;
 
-    public SearchBar(driver) {
+    public SearchBar(WebDriver driver) {
         PageFactory.initElements(driver,this);
     }
 
@@ -25,10 +22,14 @@ public class SearchBar extends Base {
 
         Actions actions = new Actions(driver);
         actions.sendKeys(search,"BridgeLabz").build().perform();
-       actions.sendKeys(Keys.ENTER).perform();
 
-        sleep(5000);
+//        search.sendKeys("BridgeLabz");
+        actions.sendKeys(Keys.ENTER).perform();
 
-        search.click();
+//        search.click();
+
+        Thread.sleep(5000);
+
+
     }
 }

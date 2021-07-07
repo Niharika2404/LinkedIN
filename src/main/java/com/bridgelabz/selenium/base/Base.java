@@ -6,8 +6,6 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 
-import static java.lang.Thread.sleep;
-
 public class Base {
     public static WebDriver driver;
 
